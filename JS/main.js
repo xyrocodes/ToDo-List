@@ -2,7 +2,6 @@
 const toDoInput = document.querySelector('.todo-input');
 const toDoBtn = document.querySelector('.todo-btn');
 const toDoList = document.querySelector('.todo-list');
-// const darkerTheme = document.querySelector('.darker-theme');
 
 // Event Listeners
 toDoBtn.addEventListener('click', addToDo);
