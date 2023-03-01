@@ -90,11 +90,7 @@ body {
     to{border-right-color: transparent;}
   }
 
-  @keyframes darker-animated-cursor {
-    from{border-right-color: #01394c;}
-    to{border-right-color: transparent;}
-  }
-
+/* designing the form */
 form {
     display: flex;
     font-size: 1.4rem;
@@ -117,48 +113,6 @@ form input {
     width: 100%;
 }
 
-/* Input themes */
-form input.standard-input {
-    background-color: #181a1a;
-    color: rgb(247, 226, 223);
-}
-
-form input.light-input {
-    background-color: #AEB1B4;
-    color: #1a150e;
-}
-
-form input.light-input::placeholder {
-    color: #1a150e;
-    opacity: 0.7;
-}
-
-form input.darker-input {
-    background-color: #01394c;
-    color: white;
-}
-
-form input.darker-input::placeholder {
-    color: white;
-    opacity: 0.7;
-}
-
-form input:hover {
-    cursor: text;
-}
-
-form input.standard-input:hover {
-    background-color: rgb(0, 0, 0);
-}
-
-form input.light-input:hover {
-    background-color: #919699;
-}
-
-form input.darker-input:hover {
-    background-color: #013141;
-}
-
 button {
     border: none;
     outline: none; 
@@ -167,35 +121,6 @@ button {
 
 button:hover {
     cursor: pointer;
-}
-
-/* Button themes */
-button.standard-button {
-    background-color: rgb(247, 226, 223);
-    color: rgb(0, 0, 0);
-}
-
-button.standard-button:hover {
-    background-color: white;
-    box-shadow: #fff8 0 0 10px;
-}
-
-button.light-button {
-    background-color: white;
-    color: #1a150e;
-}
-
-button.light-button:hover {
-    background-color: #f0f0f0;
-}
-
-button.darker-button {
-    background-color: #002837;
-    color: white;
-}
-
-button.darker-button:hover {
-    background-color: #001f29;
 }
 
 form button {
@@ -243,6 +168,7 @@ form button {
     overflow-wrap: anywhere;
 }
 
+/* check button and delete button */
 .check-btn, .delete-btn {
     font-size: 19px;
     cursor: pointer;
@@ -319,8 +245,5 @@ form button {
         border-radius: 15px;
         margin-top: 15px;
         width: 50%;
-    }
-    form > button.light-button {
-        box-shadow: 0 0 5px lightgray;
-    }
+    }  
 }
