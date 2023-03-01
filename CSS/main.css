@@ -33,31 +33,6 @@ body {
     width: 100%;
 }
 
-/* Theme buttons div */
-.flexrow-container {
-    align-items: center;
-    align-self: flex-end;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 3%;
-}
-
-.theme-selector {
-    border: 1px solid #d1dae3;
-    border-radius: 100%;
-    height: 35px;
-    margin: 0 8px;
-    transition: tranform 150ms ease-in-out, box-shadow 200ms ease-in-out;
-    width: 35px;
-}
-
-.theme-selector:hover { 
-    box-shadow: white 0 0 8px;
-    cursor: pointer;
-}
-
-
-
 /* Animation */
 #title {
     border-right: solid 3px rgba(0, 0, 0, 0.75);
@@ -73,21 +48,6 @@ body {
 #title {
     animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
         animated-cursor 750ms steps(11,end) infinite;
-  }
-
-
-  
-  /* text animation */
-  
-  @keyframes animated-text{
-    from{width: 0%;}
-    to{width: 480px;}
-  }
-  
-  /* cursor animations */
-  @keyframes animated-cursor{
-    from{border-right-color: rgba(0, 0, 0, 0.75);}
-    to{border-right-color: transparent;}
   }
 
 /* designing the form */
@@ -113,6 +73,7 @@ form input {
     width: 100%;
 }
 
+/* designing the button */
 button {
     border: none;
     outline: none; 
@@ -168,7 +129,7 @@ form button {
     overflow-wrap: anywhere;
 }
 
-/* check button and delete button */
+/* design the check button and delete button */
 .check-btn, .delete-btn {
     font-size: 19px;
     cursor: pointer;
@@ -186,13 +147,14 @@ form button {
     pointer-events: none;
 }
 
-
+/* designing the list after checked the work */
 .completed {
     transition: 0.2s;
     text-decoration: line-through;
     opacity: 0.5;
 }
 
+/* transition while clicking on the delete button */
 .fall {
     transition: 0.5s;
     transform: translateY(45rem) rotateZ(45deg);
